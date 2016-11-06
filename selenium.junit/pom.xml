@@ -4,14 +4,79 @@
 	<groupId>baba.automation</groupId>
 	<artifactId>selenium.junit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>myMavenProject</name>
+	<url>http://maven.apache.org</url>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<!-- <suiteXmlFiles> <suiteXmlFile>src/test/resources/wwwRegression.xml</suiteXmlFile> 
+						<suiteXmlFile>src/test/resources/betaRegression.xml</suiteXmlFile> </suiteXmlFiles> -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium.fluent</groupId>
+			<artifactId>fluent-selenium</artifactId>
+			<version>1.16.1</version>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-control</artifactId>
+			<version>2.0rc2</version>
+		</dependency> -->
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+
+		<dependency>
+			<groupId>de.openkeyword</groupId>
+			<artifactId>autoit</artifactId>
+			<version>0.0.15</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.jacob-project</groupId>
+			<artifactId>jacob</artifactId>
+			<version>1.14.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit-addons</groupId>
+			<artifactId>junit-addons</artifactId>
+			<version>1.4</version>
+		</dependency>
 	</dependencies>
-
-
 </project>
