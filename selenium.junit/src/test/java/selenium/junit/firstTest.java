@@ -18,25 +18,24 @@ public class firstTest{
 	public static void setUpBeforeClass() throws Exception {
 		System.out.println(System.getProperty("user.dir"));
 	}
-
+	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}
-
+	
 	@Before
 	public void setUp() throws Exception {
 		DriverFactory dd = new DriverFactory();
 		drive = dd.getDriver("http://www.google.com", "ff", "Baba");
 	}
-
+	
 	@After
 	public void tearDown() throws Exception {
 		drive.quit();
 	}
-
+	
 	@Test
 	public void test() {
 		
 	}
-
 }
